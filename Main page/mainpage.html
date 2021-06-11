@@ -4,47 +4,61 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <title>Reservia</title>
+        <script src="https://kit.fontawesome.com/c30b777b7c.js" crossorigin="anonymous"></script> <!-- script icon-->
     </head>
 
     <body>
-        <header>        
-            <img class="logo" src="\Main page\reservia.png" alt="Logo reservia" /><br/>
-                <nav>
-                    <ul>
+        <header class="haut"> <!-- header + nav -->                  
+                <img src="\Main page\reservia.png" alt="Logo reservia" /><br/>
+                <nav class="menu">
                         <li><a href="\Main page\progress.html">Hébergements</a></li>
                         <li><a href="\Main page\progress.html">Activités</a></li>
-                        <li><a href="\Main page\progress.html">S'inscrire</a></li>
-                    </ul>
+                        <li><a href="\Main page\progress.html" class="inscri">S'inscrire</a></li>
                 </nav>
         </header>
-        <section> <!-- recherche -->
-            <p>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                En plein centre ville ou en pleine nature
 
+        <section class="slogan"> <!-- slogan -->
+            <p>   
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br/>
+                En plein centre ville ou en pleine nature
+            </p> 
+        </section>
+
+        <section class="rechercher"> <!-- barre de recherche -->
                 <form>
                     <input name="rechercher" type="search" placeholder="Marseille, France" />
                     <input type="submit" value="Rechercher" />
                 </form>
-                         
-            <h2>Filtres</h2>
-                <div class="filtre">
-                    <input type="checkbox" /> <label for="Economique"><h2>Economique</h2></label>
-                </div>
-                <div class="filtre">
-                    <input type="checkbox" /> <label for="Familial"><h2>Familial</h2></label>
-                </div>
-                <div class="filtre">
-                    <input type="checkbox" /> <label for="Romantique"><h2>Romantique</h2></label>
-                </div>
-                <div class="filtre">
-                    <input type="checkbox" /> <label for="Animaux"><h2>Animaux autorisés</h2></label>
-                </div>            
-                Plus de 500 logements sont disponibles dans cette ville
-            </p>
         </section>
         
-        <section id="logement"> <!-- hébergements -->
+        <!-- <section class="filtre">
+            <h2>Filtres</h2>
+                    <input type="checkbox" class="fas fa-money-bill-wave-alt"/> <label for="Economique"><h2>Economique</h2></label>
+                    <input type="checkbox" class="fas fa-child"/> <label for="Familial"><h2>Familial</h2></label>
+                    <input type="checkbox" class="fas fa-heart"/> <label for="Romantique"><h2>Romantique</h2></label>
+                    <input type="checkbox" class="fas fa-dog"/> <label for="Animaux"><h2>Animaux autorisés</h2></label>          
+                    <i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
+        </section> -->
+        <section class="filtretest">
+            <div class="item">
+                <i class="fas fa-money-bill-wave-alt delivery-icon"></i>
+                <p>Economique</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-child delivery-icon"></i>
+                <p>Familial</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-heart delivery-icon"></i>
+                <p>Romantique</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-dog delivery-icon"></i>
+                <p>Animaux autorisés</p>
+            </div>
+        </section>
+        
+        <section class="logement"> <!-- hébergements -->
             <div class="marseille">
                 <h1>Hébergements à Marseille</h1><br/>
                     <div class="hebergementmarseille">
@@ -109,12 +123,12 @@
                     </div>
                         <p>
                             <a href="\Main page\progress.html">
-                                <h2>Afficher plus</h2>
+                                <h3>Afficher plus</h3>
                             </a>
                         </p>
             </div>
             <div class="populaires">
-                <h1>Les plus populaires</h1><br/>
+                <h1>Les plus populaires <i class="fas fa-chart-line"></i></h1><br/>
                     <div class="hebergementpopulaires">
                             <a href="\Main page\progress.html"> 
                             <img class="photopopulaire" src="\herbergements\hebergement7.jpg" alt="Photo Hôtel Le soleil du matin" /><br/>

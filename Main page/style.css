@@ -1,17 +1,102 @@
+/* général */
+
 @font-face {
     font-family: 'raleway';
     src: url('static/Raleway-Thin.ttf') format('truetype');
 }
 *
 {
-    font-family: 'raleway', Arial, serif;
+    font-family: 'raleway', Arial, serif;    
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    margin: none;
+}
+h1
+{
+    font-size: 1.5em;
+    text-align: left;
 }
 
-body
+h2 + h3
 {
-    background-color: white;
-    color: black
+    font-size: 1.1em;
+    text-align: left;
 }
+
+/*header*/
+
+.haut 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.haut img
+{
+    width: 10%;
+}
+.menu
+{
+    display: flex;
+    list-style: none;
+    width: 20%;
+    min-width: 270px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.menu li
+{
+       padding-top: 20px;
+}
+.menu li:hover
+{
+    border-top: 3px #0065FC solid;
+}
+.inscri
+{
+    color: #0065FC;
+    font-weight: 650;
+}
+
+/*slogan*/
+
+/*barre de recherche*/
+
+/*filtre*/
+.filtretest
+{
+    display: flex;
+}
+.delivery-icon /*commande spé icon*/
+{
+    color: #0065FC;
+    background-color: chartreuse;
+}
+
+/*logement général*/
+
+/*logement marseille*/
+.marseille h1
+{
+    position: absolute;
+    top: 10px;
+}
+.marseille h3
+{
+    position: absolute;
+    bottom: 10px;
+}
+
+/*logement populaire*/
+.populaire h1
+{
+    position: absolute;
+    top: 10px;
+}
+
+/*
+
 #logement
 {
     display: flex;
@@ -95,10 +180,7 @@ body
     overflow: hidden
 }
 
-.logo
-{
-    width: 10%;
-}
+
 .photomarseille
 {
     background-size: cover;
@@ -114,23 +196,7 @@ body
     border-radius: 10px;
     float: left;
 }
-p
-{
-    font-size: 1em;
-    text-align: left;
-}
 
-h1
-{
-    font-size: 1.5em;
-    text-align: left;
-}
-
-h2
-{
-    font-size: 1.1em;
-    text-align: left;
-}
 
 .filtre
 {
@@ -147,3 +213,4 @@ h2
 {
     background-color: #DEEBFF
 }
+
