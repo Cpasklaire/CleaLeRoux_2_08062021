@@ -30,6 +30,8 @@ h2 + h3
 {
     display: flex;
     justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .haut img
 {
@@ -67,6 +69,8 @@ h2 + h3
 .slogan
 {
     line-height: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 /*barre de recherche*/
@@ -76,6 +80,8 @@ h2 + h3
     width: 20%;
     border-radius: 20px;
     overflow: hidden;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .recherche
 {
@@ -127,6 +133,8 @@ input[type=button]
     justify-content: space-between;
     align-items: center;
     margin: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .item
 {
@@ -164,6 +172,8 @@ input[type=button]
     border: solid 1px;
     border-radius: 100%;
     padding: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 /*logement général*/
 
@@ -182,8 +192,8 @@ input[type=button]
     position: relative;
     padding-top: 5%;
     border-radius: 20px;
-    margin: 10px;
-    width: 60%;
+    margin: 2%;
+    width: 75%;
 }
 .titre
 {
@@ -275,8 +285,8 @@ input[type=button]
     position: relative;
     padding-top: 5%;
     border-radius: 20px;
-    margin: 10px;
-    width: 40%;
+    margin: 2%;
+    width: 25%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -352,6 +362,8 @@ input[type=button]
     display: flex;
     align-content: center;
     justify-content: space-around;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .titre_activite
 {
