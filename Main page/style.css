@@ -64,7 +64,7 @@ h2 + h3
 /*barre de recherche*/
 
 /*filtre*/
-.filtretest
+.filtre
 {
     width: 50%;
     display: flex;
@@ -102,6 +102,13 @@ h2 + h3
 
 /*logement général*/
 
+.hebergement
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*logement marseille*/
 .marseille
 {
@@ -109,6 +116,9 @@ h2 + h3
     padding: 20px;
     position: relative;
     padding-top: 5%;
+    border-radius: 20px;
+    margin: 10px;
+    width: 60%;
 }
 .titre
 {
@@ -134,8 +144,8 @@ h2 + h3
 }
 .photo_marseille
 {
-    min-width: 300px;
-    height: 210px;
+    min-width: 310px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -187,154 +197,161 @@ h2 + h3
     color: #0065FC;
 }
 
+/* Populaire */
 
-
-
-
-
-
-
-
-
-
-
-
-/*
-.marseille h1
+.populaire
 {
-    position: absolute;
-    top: 10px;
-}
-.marseille h3
-{
-    position: absolute;
-    bottom: 10px;
-}
-
-/*logement populaire*/
-/*
-.populaire h1
-{
-    position: absolute;
-    top: 10px;
-}
-
-/*
-
-#logement
-{
+    background-color: #F2F2F2;
+    padding: 20px;
+    position: relative;
+    padding-top: 5%;
+    border-radius: 20px;
+    margin: 10px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column;
+}
+.titre_populaire
+{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background-color: #f2f2f2;
+}
+.annonces_populaire
+{
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
     justify-content: space-between;
-    width: 100%;
 }
-.marseille
+.marge_populaire
 {
-    background-color: #F2F2F2;
-    border: 10px;
-    border-radius: 10px;
-    width: 70%;
+    padding: 5px;
+    border-radius: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content : space-around;
-    margin: 5px
+    margin: 15px;
 }
-.populaires
+.photo_populaire
 {
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5px
+    min-width: 400px;
+    height: 190px;
+    background-size: contain;
+    background-position: left;
+    position: relative;
+    border-radius: 20px;
 }
-.hebergementmarseille
+.photo7
 {
-    background-color: white;
-    border: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 4px black;
-    display: flex;
-    overflow: hidden;
-    height: 30%;
-    margin: 5px;
-    flex-direction: column;
-    align-items: center;
+    background-image: url(../herbergements/hebergement7.jpg);
+}
+.photo8
+{
+    background-image: url(../herbergements/hebergement8.jpg);
+}
+.photo9
+{
+    background-image: url(../herbergements/hebergement9.jpg);
+}
 
-}
-.hebergementpopulaires
+.details_populaire
 {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 4px black;
-    display: flex;
-    overflow: hidden;
-    height: 30%;
+    position: absolute;
+    right: 0px;
+    height: 79%;
+    padding: 5%;
     width: 60%;
-    margin: 5px;
-    align-items: center;
-    text-align: center;
+}
 
-}
-#categorieactivite
-{    
-    background-color: white;
-    border: 10px;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content : space-around;
-}
+/* Activité */
+
 .activite
 {
-    background-color: white;
-    border: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px #deebff63;
-    width: 5%;
-    height: 5%;
+    padding-top: 60px;
+    position: relative;
     display: flex;
-    overflow: hidden
+    align-content: center;
+    justify-content: space-around;
 }
-
-
-.photomarseille
+.titre_activite
 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.annonces_activite
+{
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.paysage
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.photo_activite_paysage
+{
+    min-width: 400px;
+    height: 180px;
     background-size: cover;
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px #F2F2F2;
+    margin: 15px;
 }
-.photopopulaire
+.photo_activite_portrait
 {
+    min-width: 400px;
+    height: 400px;
     background-size: cover;
-    width: 110px;
-    height: 150px;
-    border-radius: 10px;
-    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px #F2F2F2;
+}
+.activite1
+{
+    background-image: url(/activites/activite1.jpg);
+}
+.activite2
+{
+    background-image: url(/activites/activite2.jpg);
+}
+.activite3
+{
+    background-image: url(/activites/activite3.jpg);
+}
+.activite4
+{
+    background-image: url(/activites/activite4.jpg);
+}
+.activite5
+{
+    background-image: url(/activites/activite5.jpg);
+}
+.activite6
+{
+    background-image: url(/activites/activite6.jpg);
 }
 
-
-.filtre
+.details_activite
 {
-    border: 2px solid; 
-    border-radius: 10px;
-    width: 5%;
-    height: 5%
-}
-.filtre:hover
-{
-    background-color: #DEEBFF
-}
-.filtre:focus
-{
-    background-color: #DEEBFF
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
+    padding-left: 5%;
 }
 
+/*Footer*/
