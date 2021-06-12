@@ -11,8 +11,8 @@
         <header class="haut"> <!-- header + nav -->                  
                 <img src="\Main page\reservia.png" alt="Logo reservia" /><br/>
                 <nav class="menu">
-                        <li><a href="\Main page\progress.html">Hébergements</a></li>
-                        <li><a href="\Main page\progress.html">Activités</a></li>
+                        <li><a href="#hebergement">Hébergements</a></li>
+                        <li><a href="#activite">Activités</a></li>
                         <li><a href="\Main page\progress.html" class="inscri">S'inscrire</a></li>
                 </nav>
         </header>
@@ -24,11 +24,18 @@
             </p> 
         </section>
 
-        <section class="rechercher"> <!-- barre de recherche -->
-                <form>
-                    <input name="rechercher" type="search" placeholder="Marseille, France" />
-                    <input type="submit" value="Rechercher" />
-                </form>
+        <section class="topnav"> <!-- barre de recherche -->
+            <div class="recherche">
+                <div class="itemrecherche">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="entre">
+                    <input type="texte" placeholder="Marseille, France" class="taper"/>
+                </div>
+                <div class="bouton">  
+                    <input type="button" value="Rechercher" class=detail_bouton/>
+                </div>  
+            </div>
         </section>
 
         <section class="filtre"> <!-- Filtres -->
@@ -51,12 +58,15 @@
             </div>
         </section>
 
-        <section class="hebergement"> <!-- locations -->
+            <p><i class="fas fa-info"></i>
+            Plus de 500 logements sont disponibles dans cette ville</p>
+        
+            <section class="hebergement"> <!-- locations -->
             <section class="marseille">
-                <h1 class="titre">Hébergements à Marseille</h1>
+                <h1 class="titre" id="hebergement">Hébergements à Marseille</h1>
                     <div class="annonces_marseille">
                         <div class="marge">
-                            <a class="photo_marseille photo1">
+                            <a href="progress.html" class="photo_marseille photo1" alt="Auberge de Cannebière">
                                 <div class="details">
                                     <p class="nom"><h2>Auberge de Cannebière</h2></p>
                                     <p class="prix">Nuit à partir de 25€</p>
@@ -69,7 +79,7 @@
                             </a>
                         </div>
                         <div class="marge">
-                            <a class="photo_marseille photo2">
+                            <a href="progress.html" class="photo_marseille photo2" alt="Hôtel du port">
                                 <div class="details">
                                     <p class="nom"><h2>Hôtel du port</h2></p>
                                     <p class="prix">Nuit à partir de 52€</p>
@@ -82,7 +92,7 @@
                             </a>
                         </div>
                         <div class="marge">
-                            <a class="photo_marseille photo3">
+                            <a href="progress.html" class="photo_marseille photo3" alt="Hôtel Les mouettes">
                                 <div class="details">
                                     <p class="nom"><h2>Hôtel Les mouettes</h2></p>
                                     <p class="prix">Nuit à partir de 76€</p>
@@ -95,7 +105,7 @@
                             </a>
                         </div>
                         <div class="marge">
-                            <a class="photo_marseille photo4">
+                            <a href="progress.html" class="photo_marseille photo4" alt="Hôtel de la mer">
                                 <div class="details">
                                     <p class="nom"><h2>Hôtel de la mer</h2></p>
                                     <p class="prix">Nuit à partir de 46€</p>
@@ -108,7 +118,7 @@
                             </a>
                         </div>
                         <div class="marge">
-                            <a class="photo_marseille photo5">
+                            <a href="progress.html" class="photo_marseille photo5" alt="Auberge Le Panier">
                                 <div class="details">
                                     <p class="nom"><h2>Auberge Le Panier</h2></p>
                                     <p class="prix">Nuit à partir de 23€</p>
@@ -121,7 +131,7 @@
                             </a>
                         </div>
                         <div class="marge">
-                            <a class="photo_marseille photo6">
+                            <a href="progress.html" class="photo_marseille photo6" alt="Hôtel chez Amina">
                                 <div class="details">
                                     <p class="nom"><h2>Hôtel chez Amina</h2></p>
                                     <p class="prix">Nuit à partir de 96€</p>
@@ -133,16 +143,19 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> 
+                    <h1 class="afficher">Afficher plus</h1>     
             </section>
+
 
             <section class="populaire">
                 <h1 class="titre_populaire">Les plus populaires</h1>
+                <i class="fas fa-chart-line"></i>
                     <div class="annonces_populaire">
                         <div class="marge_populaire">
-                            <a class="photo_populaire photo7">
+                            <a href="progress.html" class="photo_populaire photo7" alt="Hôtel Le soleil du matin">
                                 <div class="details_populaire">
-                                    <p class="nom"><h2>Hôtel Le soleil du matin</h2></p>
+                                    <p class="nom"><h2>Hôtel Le soleil du</h2></p>
                                     <p class="nom"><h2>matin</h2></p>
                                     <p class="prix">Nuit à partir de 128€</p>
                                     <i class="fas fa-star star"></i>
@@ -156,7 +169,7 @@
                     </div>
                     <div class="annonces_populaire">
                         <div class="marge_populaire">
-                            <a class="photo_populaire photo8">
+                            <a href="progress.html" class="photo_populaire photo8" alt="Au coeur de l'eau chambre d'hôtel">
                                 <div class="details_populaire">
                                     <p class="nom"><h2>Au coeur de l'eau</h2></p>
                                     <p class="nom"><h2>Chambres d'hôtel</h2></p>
@@ -172,7 +185,7 @@
                     </div>
                     <div class="annonces_populaire">
                         <div class="marge_populaire">
-                            <a class="photo_populaire photo9">
+                            <a href="progress.html" class="photo_populaire photo9" alt="Hôtel Tout bleu et blanc">
                                 <div class="details_populaire">
                                     <p class="nom"><h2>Hôtel Tout bleu et</h2></p>
                                     <p class="nom"><h2>Blanc</h2></p>
@@ -190,9 +203,9 @@
         </section>
 
         <section class="activite"> <!-- Activité -->
-            <h1 class="titre_activite">Activités à Marseille</h1>
+            <h1 class="titre_activite" id="activite">Activités à Marseille</h1>
                 <div class="annonces_activite">
-                    <a class="photo_activite_portrait activite1">
+                    <a href="progress.html" class="photo_activite_portrait activite1" alt="Vieux Port">
                         <div class="details_activite">
                             <p class="nom"><h2>Vieux Port</h2></p>
                         </div>
@@ -200,14 +213,14 @@
                 </div>
                 <div class="paysage">
                     <div class="annonces_activite">
-                        <a class="photo_activite_paysage activite2">
+                        <a href="progress.html" class="photo_activite_paysage activite2" alt="Fort de Pomègues">
                             <div class="details_activite">
                                 <p class="nom"><h2>Fort de Pomègues</h2></p>
                             </div>
                         </a>
                     </div>
                     <div class="annonces_activite">
-                        <a class="photo_activite_paysage activite3">
+                        <a href="progress.html" class="photo_activite_paysage activite3" alt="Îles du Frioul">
                             <div class="details_activite">
                                 <p class="nom"><h2>Îles du Frioul</h2></p>
                             </div>
@@ -215,7 +228,7 @@
                     </div>
                     </div>
                     <div class="annonces_activite">
-                        <a class="photo_activite_portrait activite4">
+                        <a href="progress.html" class="photo_activite_portrait activite4" alt="Parc National des Calanques">
                             <div class="details_activite">
                                 <p class="nom"><h2>Parc National des Calanques</h2></p>
                             </div>
@@ -223,14 +236,14 @@
                     </div>
                 <div class="paysage">
                     <div class="annonces_activite">
-                        <a class="photo_activite_paysage activite5">
+                        <a href="progress.html" class="photo_activite_paysage activite5" alt="Notre-Dame-de-la-Garde">
                             <div class="details_activite">
                                 <p class="nom"><h2>Notre-Dame-de-la-Garde</h2></p>
                             </div>
                         </a>
                     </div>
                     <div class="annonces_activite">
-                        <a class="photo_activite_paysage activite6">
+                        <a href="progress.html" class="photo_activite_paysage activite6" alt="Parc Longchamp">
                             <div class="details_activite">
                                 <p class="nom"><h2>Parc Longchamp</h2></p>
                             </div>
@@ -240,18 +253,18 @@
         </section>
     </body>
 
-    <footer>
+    <footer class="footer"> <!-- Bas de page -->
         <nav>
-            <ul><h2>A propos</h2>
+            <ul><h5>A propos</h5>
                 <li><a href="\Main page\progress.html">Fonctionnement du site</a></li>
                 <li><a href="\Main page\progress.html">Conditions générales de vente</a></li>
                 <li><a href="\Main page\progress.html">Données et confidentialité</a></li>
             </ul>
-            <ul><h2>Nos hébergements</h2>
+            <ul><h5>Nos hébergements</h5>
                 <li><a href="\Main page\progress.html">Charte qualité</a></li>
                 <li><a href="\Main page\progress.html">Soumettre votre hôtel</a></li>
             </ul>
-            <ul><h2>Assistance</h2>
+            <ul><h5>Assistance</h5>
                 <li><a href="\Main page\progress.html">Centre d'aide</a></li>
                 <li><a href="\Main page\progress.html">Nous contacter</a></li>
             </ul>

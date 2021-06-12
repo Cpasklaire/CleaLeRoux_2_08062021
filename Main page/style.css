@@ -53,6 +53,10 @@ h2 + h3
 {
     border-top: 3px #0065FC solid;
 }
+.menu a
+{
+    text-decoration: none;
+}
 .inscri
 {
     color: #0065FC;
@@ -60,9 +64,61 @@ h2 + h3
 }
 
 /*slogan*/
+.slogan
+{
+    line-height: 5px;
+}
 
 /*barre de recherche*/
-
+.topnav
+{
+    border: solid #F2F2F2;
+    width: 20%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.recherche
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.itemrecherche
+{
+    background-color: #F2F2F2;
+}
+.fa-map-marker-alt
+{
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    background-color: #F2F2F2;
+}
+.taper
+{
+    border: none;
+}
+input[type="texte"]
+{
+    border: none;
+    text-decoration: none;
+}
+.bouton
+{
+    background-color: #0065FC;
+    padding: 5px;
+}
+input[type=button]
+{
+    background-color: #0065FC;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    cursor: pointer;
+}
 /*filtre*/
 .filtre
 {
@@ -70,6 +126,7 @@ h2 + h3
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px;
 }
 .item
 {
@@ -100,6 +157,14 @@ h2 + h3
     border-radius: 100%;
 }
 
+/*inter*/
+.fa-info
+{
+    color: #0065FC;
+    border: solid 1px;
+    border-radius: 100%;
+    padding: 5px;
+}
 /*logement général*/
 
 .hebergement
@@ -196,6 +261,10 @@ h2 + h3
 {
     color: #0065FC;
 }
+.afficher
+{
+    background-color: #F2F2F2;
+}
 
 /* Populaire */
 
@@ -212,6 +281,7 @@ h2 + h3
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding-bottom: 4%;
 }
 .titre_populaire
 {
@@ -219,6 +289,12 @@ h2 + h3
     left: 20px;
     top: 10px;
     background-color: #f2f2f2;
+}
+.fa-chart-line
+{
+    position: absolute;
+    top: 5%;
+    right: 5%;
 }
 .annonces_populaire
 {
@@ -308,6 +384,7 @@ h2 + h3
     border-radius: 20px;
     box-shadow: 3px 3px 2px #F2F2F2;
     margin: 15px;
+    overflow: hidden;
 }
 .photo_activite_portrait
 {
@@ -319,6 +396,7 @@ h2 + h3
     position: relative;
     border-radius: 20px;
     box-shadow: 3px 3px 2px #F2F2F2;
+    overflow: hidden;
 }
 .activite1
 {
@@ -350,8 +428,40 @@ h2 + h3
     background-color: white;
     position: absolute;
     bottom: 0px;
-    width: 95%;
+    width: 100%;
     padding-left: 5%;
 }
 
 /*Footer*/
+
+.footer
+{
+    background-color: #F2F2F2;
+}
+.footer nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #F2F2F2;
+}
+.footer ul
+{
+    list-style: none;
+    background-color: #F2F2F2;
+}
+.footer li
+{
+    background-color: #F2F2F2;
+}
+.footer a
+{
+    text-decoration: none;
+    background-color: #F2F2F2;
+}
+.footer h5 
+{
+        font-size: 1.1em;
+        text-align: left;
+        background-color: #F2F2F2;
+}
