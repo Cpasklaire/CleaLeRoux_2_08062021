@@ -65,15 +65,15 @@ nav a:active
 
 /* slogan */
 
-.slogan
-{
-    margin: 5%;
-}
-.slogan h1
-{
-    font-size: 3em;
-    padding-bottom: 0.5em;
-}
+    .slogan
+    {
+        margin: 5%;
+    }
+    .slogan h1
+    {
+        font-size: 3em;
+        padding-bottom: 0.5em;
+    }
 
 /* recherche */
 
