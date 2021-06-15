@@ -1,0 +1,549 @@
+/* Général */ 
+
+@font-face {
+    font-family: 'raleway';
+    src: url('static/Raleway-Thin.ttf') format('truetype');
+}
+*
+{
+    font-family: 'raleway', Arial, serif;    
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* header */
+header img
+{
+    width: 30%;
+    margin-left: 3%;
+}
+.top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.top a
+{
+    font-size: 2em;
+    color: #0065FC;
+    font-weight: 700;
+    margin-right: 50px;
+}
+.top a:hover /*aide*/
+{
+    color: #0065FC;
+    border-top: solid #0065FC 5px;
+    padding-top: 2%;
+}
+
+header nav
+{
+    position: absolute;
+    top: 45px;
+    right: 240px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+}
+nav a
+{
+    text-align: center;
+    padding: 15%;
+    padding-left: 6%;
+    padding-right: 3%;
+    background-color: transparent;
+}
+nav a:hover
+{
+    color: #0065FC;
+    border-top: solid #0065FC 5px;
+    padding: 15%;
+    padding-left: 6%;
+    padding-right: 3%;
+}
+
+/* slogan */
+
+.slogan
+{
+    margin: 3%;
+}
+.slogan h1
+{
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+/* recherche */
+
+.recherche div
+{
+    border: solid #F2F2F2;
+    width: 30%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 2%;
+    margin-right: 2%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-map-marker-alt
+{
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F2F2F2;
+}
+.input::placeholder /*aide*/
+{
+    border: none;
+    font-weight: 500;
+}
+button
+{
+    background-color: #0065FC;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+button:active
+{
+    background-color: #DEEBFF;
+}
+.icon
+{
+    visibility: hidden;
+}
+
+/* Filtre */
+.filtre
+{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%;
+    flex-wrap: wrap;
+}
+.checkbox input[type="checkbox"]
+{
+   visibility:hidden;
+   width: 0;
+}
+.filtre .nom
+{
+    font-weight: 700;
+}
+.filtre p
+{
+    font-size: 1.5em;
+    font-weight: 500;
+    background-color: transparent;
+}
+.checkbox
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 10px;
+    border: solid 1px #F2F2F2;
+    border-left: transparent;
+    border-radius: 100px;
+    box-shadow: 2px 2px 2px #deebffb6;
+}
+.checkbox:hover, .checkbox:checked /* faire rester le fond*/
+{
+    background-color: #DEEBFF;
+}
+
+.filtre label
+{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.delivery-icon /*commande spé icon*/
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 15px;
+    border-radius: 100%;
+}
+
+/* inter */
+
+.inter
+{
+    margin: 3%;
+    position: relative;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+.fa-info
+{
+    position: absolute;
+    color: #0065FC;
+    border: solid #F2F2F2 3px;
+    border-radius: 50%;
+    padding: 1%;
+    font-size: 11px;
+    top: 0;
+    left: 0;
+}
+
+/*hebergement*/
+.hebergement
+{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 3%;
+    align-items: flex-start;
+}
+
+/* populaire */
+
+.populaire
+{
+    background-color: #F2F2F2;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding-top: 9%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 20px;
+    height: 780px;
+}
+.titre_populaire
+{
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    font-size: 2em;
+    background-color: #F2F2F2;
+}
+.fa-chart-line
+{
+    position: absolute;
+    right: 8%;
+    top: 5%;
+    font-size: 40px;
+    background-color: transparent;
+}
+
+/* annonce pop */
+
+.annonces_populaire
+{
+
+    border-radius: 20px;
+    display: flex;
+}
+.marge_populaire
+{
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.photo_populaire
+{
+    width: 340px;
+    height: 190px;
+    background-size: cover;
+    background-position: left;
+    border-radius: 20px;
+    position: relative;
+}
+.photo7
+{
+    background-image: url(../herbergements/hebergement7.jpg);
+}
+.photo8
+{
+    background-image: url(../herbergements/hebergement8.jpg);
+}
+.photo9
+{
+    background-image: url(../herbergements/hebergement9.jpg);
+}
+.details_populaire
+{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    height: 95%;
+    padding: 2%;
+    padding-right: 3%;
+    width: 50%;
+}
+.details_populaire h2
+{
+    font-size: 1em;
+}
+.populaire .prix
+{
+    font-size: 0.8em;
+    margin: 20px;
+    margin-left: 0;
+}
+.details_populaire input[type="range"]
+ {
+    visibility:hidden;
+ }
+ 
+ /*marseille*/
+
+ .marseille
+{
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    margin: 3%;
+    background-color: #F2F2F2;
+    width: 75%;
+    border-radius: 20px;
+    margin-top: 0;
+}
+.titre
+{
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    font-size: 3.5em;
+    background-color: transparent;
+}
+.annonces_marseille
+{
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    justify-content: space-between;
+}
+.marge
+{
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    margin: 15px;
+}
+.photo_marseille
+{
+    min-width: 310px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+}
+.photo1
+{
+    background-image: url(../herbergements/hebergement1.jpg);
+}
+.photo2
+{
+    background-image: url(../herbergements/hebergement2.jpg);
+}
+.photo3
+{
+    background-image: url(../herbergements/hebergement3.jpg);
+}
+.photo4
+{
+    background-image: url(../herbergements/hebergement4.jpg);
+}
+.photo5
+{
+    background-image: url(../herbergements/hebergement5.jpg);
+}
+.photo6
+{
+    background-image: url(../herbergements/hebergement6.jpg);
+}
+
+.details
+{
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
+    margin: 0;
+    height: 35%;
+    padding: 3%;
+    border-radius: 10px;
+}
+.nom 
+{
+    line-height: 2px; /*interligne*/
+    background-color: transparent;
+}
+.details h2
+{
+    font-size: 1.5em;
+    background-color: transparent;
+}
+.prix
+{
+    font-size: 1em;
+}
+.afficher
+{
+    position: absolute;
+    bottom: 3%;
+    font-size: 1.5em;
+    left: 3%;
+    background-color: transparent;
+}
+/* Activité */
+
+.activite
+{
+    padding-top: 60px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 3%;
+}
+.titre_activite
+{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 2em;
+}
+.annonces_activite
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.paysage
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.photo_activite_paysage
+{
+    min-width: 400px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px #F2F2F2;
+    margin: 15px;
+    overflow: hidden;
+}
+.photo_activite_portrait
+{
+    min-width: 360px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px #F2F2F2;
+    overflow: hidden;
+}
+.activite1
+{
+    background-image: url(/activites/activite1.jpg);
+}
+.activite2
+{
+    background-image: url(/activites/activite2.jpg);
+}
+.activite3
+{
+    background-image: url(/activites/activite3.jpg);
+}
+.activite4
+{
+    background-image: url(/activites/activite4.jpg);
+}
+.activite5
+{
+    background-image: url(/activites/activite5.jpg);
+}
+.activite6
+{
+    background-image: url(/activites/activite6.jpg);
+}
+
+.details_activite
+{
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 5%;
+}
+
+/*Footer*/
+
+.footer
+{
+    background-color: #F2F2F2; /*aide*/
+}
+.footer nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: transparent;
+}
+.footer ul
+{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: transparent;
+    align-items: flex-start;
+    width: 20%;
+    background-color: transparent;
+}
+.footer li
+{
+    background-color: transparent;
+    justify-content: space-around;
+    width: 100%;    
+    padding-bottom: 2%;;
+}
+.footer a /* aide*/
+{
+    text-decoration: none;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+
+}
+.footer a:hover
+{
+    border: none;
+}
+.footer h5 
+{
+        font-size: 1.1em;
+        text-align: left;
+        background-color: transparent;
+        padding: 3%;
+        padding-left: 5%;
+}
