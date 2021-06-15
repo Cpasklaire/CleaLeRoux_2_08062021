@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'raleway';
-    src: url('static/Raleway-Thin.ttf') format('truetype');
+    src: url('font/static/Raleway-Thin.ttf') format('truetype');
 }
 *
 {
@@ -481,15 +481,15 @@
     }
     .photo7
     {
-        background-image: url(../herbergements/hebergement7.jpg);
+        background-image: url(image/herbergements/hebergement7.jpg);
     }
     .photo8
     {
-        background-image: url(../herbergements/hebergement8.jpg);
+        background-image: url(image/herbergements/hebergement8.jpg);
     }
     .photo9
     {
-        background-image: url(../herbergements/hebergement9.jpg);
+        background-image: url(image/herbergements/hebergement9.jpg);
     }
     .details_populaire
     {
@@ -600,27 +600,27 @@
     }
     .photo1
     {
-        background-image: url(../herbergements/hebergement1.jpg);
+        background-image: url(image/herbergements/hebergement1.jpg);
     }
     .photo2
     {
-        background-image: url(../herbergements/hebergement2.jpg);
+        background-image: url(image/herbergements/hebergement2.jpg);
     }
     .photo3
     {
-        background-image: url(../herbergements/hebergement3.jpg);
+        background-image: url(image/herbergements/hebergement3.jpg);
     }
     .photo4
     {
-        background-image: url(../herbergements/hebergement4.jpg);
+        background-image: url(image/herbergements/hebergement4.jpg);
     }
     .photo5
     {
-        background-image: url(../herbergements/hebergement5.jpg);
+        background-image: url(image/herbergements/hebergement5.jpg);
     }
     .photo6
     {
-        background-image: url(../herbergements/hebergement6.jpg);
+        background-image: url(image/herbergements/hebergement6.jpg);
     }
 
     .details
@@ -775,27 +775,27 @@
     }
     .activite1
     {
-        background-image: url(/activites/activite1.jpg);
+        background-image: url(image/activites/activite1.jpg);
     }
     .activite2
     {
-        background-image: url(/activites/activite2.jpg);
+        background-image: url(image/activites/activite2.jpg);
     }
     .activite3
     {
-        background-image: url(/activites/activite3.jpg);
+        background-image: url(image/activites/activite3.jpg);
     }
     .activite4
     {
-        background-image: url(/activites/activite4.jpg);
+        background-image: url(image/activites/activite4.jpg);
     }
     .activite5
     {
-        background-image: url(/activites/activite5.jpg);
+        background-image: url(image/activites/activite5.jpg);
     }
     .activite6
     {
-        background-image: url(/activites/activite6.jpg);
+        background-image: url(image/activites/activite6.jpg);
     }
 
     .details_activite
