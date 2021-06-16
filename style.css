@@ -753,6 +753,11 @@
         top: 10px;
         font-size: 2em;
     }
+    .activitebox
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .annonces_activite
     {
         display: flex;
