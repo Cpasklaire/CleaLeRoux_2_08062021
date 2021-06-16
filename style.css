@@ -75,6 +75,8 @@
                 margin: 3%;
                 position: relative;
                 display: flex;
+                background-color: lightcoral;
+                padding-bottom: 10%;
             }
             header img
             {
@@ -111,6 +113,12 @@
                 color: #0065FC;
                 border-bottom: solid #0065FC 5px;
             }
+            /*header div
+            {
+                position: absolute; pas par rappost au header ?
+                bottom: 0;
+                width: 100%;
+            }*/
         }
 
 /* Slogan */
@@ -199,6 +207,11 @@
             {
                 font-size: 300%;
                 padding: 20%;
+            }
+            .recherche input
+            {
+                font-size: 2em;
+                background-color: red;
             }
             .recherche div button
             {
@@ -309,6 +322,7 @@
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
+                background-color: red;
             }
             .checkbox
             {   
@@ -444,6 +458,7 @@
                 align-items: center;
                 border-radius: auto;
                 height: auto;
+                width: 100%;
             }
             .titre_populaire
             {
@@ -512,11 +527,6 @@
         margin: 20px;
         margin-left: 0;
     }
-    .details_populaire input[type="range"]
-    {
-        visibility:hidden;
-    }
-
         /* Annonces populaire  mobile */
         @media screen and (max-width: 1280px)
         {
@@ -528,13 +538,12 @@
             .marge_populaire
             {
                 padding: 20px;
-                position: relative;
+                background-color: white;
             }
             .photo_populaire
             {
                 min-width: 800px;
-                height: 400px;
-                position: static;
+                min-height: 400px;
             }
             .details_populaire
             {
@@ -545,9 +554,14 @@
             }
             .details_populaire h2
             {
-                font-size: 2.4em;
+                font-size: 2.3em;
             }
-            .prix
+            .populaire .prix
+            {
+                font-size: 2em;
+                margin-bottom: 40%;
+            }
+            .fa-star
             {
                 font-size: 2em;
             }
@@ -664,9 +678,10 @@
             .marseille
             {
                 padding-bottom: auto;
-                background-color: none;
+                background-color: white;
                 border-radius: none;
                 margin-top: 3%;
+                width: 100%;
             }
             .titre
             {
@@ -676,21 +691,23 @@
             .annonces_marseille
             {
                 height: auto;
-                background-color: none;
+                background-color: white;
             }
             .marge
             {
                 box-shadow: 0px 10px 5px #F2F2F2;
+                background-color: white;
+                padding: 3%;
             }
             .photo_marseille
             {
                 min-width: 800px;
-                height: 400px;
+                min-height: 400px;
                 background-position: left;
             }
             .details
             {
-                width: 100%;
+                width: 95%;
                 border-radius: none;
             }
             .nom 
@@ -701,9 +718,10 @@
             {
                 font-size: 2.4em;
             }
-            .prix
+            .annonces_marseille .prix
             {
-                font-size: auto;
+                font-size: 2em;
+                padding-bottom: 2%;
             }
             .afficher
             {
@@ -711,7 +729,7 @@
                 margin-left: 0;
                 position: static;
                 bottom: auto;
-                font-size: auto;
+                font-size: 3em;
                 left: auto;
             }
         }
