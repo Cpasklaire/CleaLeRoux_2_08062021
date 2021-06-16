@@ -99,7 +99,7 @@
                 font-size: 3em;                
                 flex-direction: column;
             }
-            nav a
+            header nav a
             {
                 border-bottom: solid #DEEBFF;
                 padding: 3%;
@@ -894,15 +894,16 @@
             .footer
             {
                 padding: 3%;
+                width: 100%;
             }
             .footer nav
             {
                 flex-direction: column;
-                align-items: stretch;   
+                align-items: stretch;
             }
             .footer ul
             {
-                display: none;
+                display: initial;
                 flex-direction: row;
                 align-items: stretch;
                 line-height: 100px;
@@ -911,15 +912,15 @@
             }
             .footer li
             {
-                font-size: 1.1em;
-                font-weight: 600;
                 line-height: 70px;
                 justify-content: stretch;
                 width: auto;
                 padding-bottom: auto;
             }
             .footer a
-            {
+            {                
+                font-size: 1.2em;
+                font-weight: 600;
                 text-decoration: none;
             }
             .footer h5 
