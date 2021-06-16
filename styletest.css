@@ -1,0 +1,218 @@
+/* Reset générale */ 
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+/* Générale */
+
+@font-face {
+    font-family: 'raleway';
+    src: url('font/static/Raleway-Thin.ttf') format('truetype');
+}
+*
+{
+    font-family: 'raleway', Arial, serif; 
+    color: black;   
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Header */
+
+    /* Logo + navigation PC */
+    .top
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top img
+    {
+        width: 10%;
+    }
+    .top nav
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 20%;
+    }
+    nav a
+    {
+        padding-top: 5%;
+        border-top: 5px;
+    }
+    nav a:hover
+    {
+        border-top: 5px #0065FC solid;
+        color: #0065FC;
+    }
+    .inscrit
+    {
+        font-weight: 700;
+        color: #0065FC;
+    }
+
+    /* Slogan PC*/
+    h1
+    {
+        font-size: 1.5em;
+        margin-top: 1%;
+    }    
+    .slogan
+    {
+        font-size: 1.5em;
+        line-height: 170%;
+    }
+
+/* Barre de recherche PC*/
+.bouton_mobile
+{
+    display: none;
+}
+.recherche
+{
+    border: solid #F2F2F2;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    height: 50px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    padding: 3%;
+    font-size: 140%;
+}
+.recherche .texte
+{
+    border : none; 
+    font-weight: 600;
+}
+.bouton_pc
+{
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    padding: 3%;
+    font-weight: 600;
+}
+
+/* Filtres */
+.checkbox input
+{
+    display: none;
+}
+.filtre
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.filtre h2
+{
+    font-size: 1.2em;
+    margin-right: 2%;
+}
+.filtre_box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.checkbox
+{
+    border: solid #F2F2F2;
+    border-radius: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-left: none;
+    padding-right: 1%;
+}
+.checkbox:hover
+{
+    background-color: #F2F2F2;
+}
+.delivery-icon
+{
+    color: #0065FC;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+/* Information */
+.info
+{
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.fa-info
+{
+    border: #F2F2F2 solid 1px;
+    padding: 1%;
+    border-radius: 100%;
+}
+
+/* Tous les hébergements */
+.hebergement
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+    /* Hébergements populaires */
