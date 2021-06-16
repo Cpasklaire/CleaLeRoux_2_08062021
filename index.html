@@ -9,13 +9,13 @@
 
 <body>
     <header> <!--navigation-->
-        <div class="top">
-            <img src="image/reservia.png" alt="Logo reservia" />
-            <a href="progress.html">S'inscrire</a>
-        </div>
+            <img src="image/reservia.png" alt="Logo reservia" />     
         <nav>
-            <a href="#hebergement">Hébergements</a>
-            <a href="#activite">Activités</a>
+            <div>
+                <a href="#hebergement">Hébergements</a>
+                <a href="#activite">Activités</a>
+            </div>
+            <a href="progress.html" class=inscrit>S'inscrire</a>
         </nav>
     </header>
 
@@ -32,38 +32,40 @@
             <input type="texte" placeholder="Marseille, France" class="texte"/>
             <button type="submit">Rechercher</button>
         </div>
-        <button type="submit" class="icon"><i class="fas fa-search"></i></button>
+        <button type="submit" class="fas fa-search"></button>
     </section>
 
     <section class="filtre"> <!-- Filtres -->
         <p class="nom">Filtres</p>
-            <div class="checkbox">
-                <input type="checkbox" ></i>
-                <label >
-                    <i class="fas fa-money-bill-wave-alt delivery-icon"></i>
-                    <p>Economique</p>
-                </label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" ></i>
-                <label >
-                    <i class="fas fa-child delivery-icon"></i>
-                    <p>Familial</p>
-                </label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" ></i>
-                <label >
-                    <i class="fas fa-heart delivery-icon"></i>
-                    <p>Romantique</p>
-                </label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" ></i>
-                <label >
-                    <i class="fas fa-dog delivery-icon"></i>
-                    <p>Animaux autorisés</p>
-                </label>
+            <div class="filtrebox">
+                <div class="checkbox">
+                    <input type="checkbox" ></i>
+                    <label >
+                        <i class="fas fa-money-bill-wave-alt delivery-icon"></i>
+                        <p>Economique</p>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" ></i>
+                    <label >
+                        <i class="fas fa-child delivery-icon"></i>
+                        <p>Familial</p>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" ></i>
+                    <label >
+                        <i class="fas fa-heart delivery-icon"></i>
+                        <p>Romantique</p>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" ></i>
+                    <label >
+                        <i class="fas fa-dog delivery-icon"></i>
+                        <p>Animaux autorisés</p>
+                    </label>
+                </div>
             </div>
     </section>
 
@@ -85,7 +87,6 @@
                                 <p class="nom"><h2>Hôtel Le soleil du</h2></p>
                                 <p class="nom"><h2>matin</h2></p>
                                 <p class="prix">Nuit à partir de 128€</p>
-                                <input type="range" max="5" value="5">
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
@@ -106,7 +107,7 @@
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
-                                <i class="far fa-star star"></i>
+                                <i class="fas fa-star nostar"></i>
                             </div>
                         </div>
                     </a>
@@ -122,7 +123,7 @@
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
-                                <i class="far fa-star star"></i>
+                                <i class="fas fa-star nostar"></i>
                             </div>
                         </div>
                     </a>
@@ -141,7 +142,7 @@
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
-                                <i class="far fa-star star"></i>
+                                <i class="fas fa-star nostar"></i>
                             </div>
                         </div>
                     </a>
@@ -167,7 +168,7 @@
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
-                                <i class="far fa-star star"></i>
+                                <i class="fas fa-star nostar"></i>
                             </div>
                         </div>
                     </a>
@@ -179,8 +180,8 @@
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
-                                <i class="far fa-star star"></i>
-                                <i class="far fa-star star"></i>
+                                <i class="fas fa-star nostar"></i>
+                                <i class="fas fa-star nostar"></i>
                             </div>
                         </div>
                     </a>
@@ -193,7 +194,7 @@
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
                                 <i class="fas fa-star star"></i>
-                                <i class="far fa-star star"></i>
+                                <i class="fas fa-star nostar"></i>
                             </div>
                         </div>
                     </a>

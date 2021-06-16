@@ -14,60 +14,57 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    background-color: transparent;
 }
 
 /* Header */
 
     /* Header PC */
-    header img
-    {
-        width: 30%;
-        margin-left: 3%;
-    }
-    .top
+    header
     {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: relative;
+        margin-left: 3%;
+        margin-right: 3%;
     }
-    .top a
+    header img
     {
-        font-size: 2em;
-        color: #0065FC;
-        font-weight: 700;
-        margin-right: 50px;
-    }
-    .top a:hover /*aide*/
-    {
-        color: #0065FC;
-        border-top: solid #0065FC 5px;
-        padding-top: 2%;
+        width: 10%;
     }
     header nav
     {
-        position: absolute;
-        top: 45px;
-        right: 240px;
         display: flex;
         justify-content: space-around;
-        font-size: 2em;
+    }
+    header div
+    {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-right: 15%;
+        margin-top: 4%;
     }
     nav a
     {
         text-align: center;
-        padding: 15%;
-        padding-left: 6%;
-        padding-right: 3%;
-        background-color: transparent;
+        justify-content: space-around;
+        padding-top: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .inscrit
+    {
+        color: #0065FC;
+        font-weight: 700;
     }
     nav a:hover
     {
         color: #0065FC;
         border-top: solid #0065FC 5px;
-        padding: 15%;
-        padding-left: 6%;
-        padding-right: 3%;
+        padding-top: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
         /* Header mobile */
@@ -76,37 +73,35 @@
             header
             {
                 margin: 3%;
+                position: relative;
+                display: flex;
             }
             header img
             {
                 width: 40%;
                 margin-left: auto
             }
-            .top
+            .inscrit
             {
-                position: static;
-            }
-            .top a
-            {
-                font-size: 3em;
+                position: absolute;
                 margin-right: auto;
+                top: 0;
+                right: 0;
             }
-            .top a:active
+            .inscrit a:active
             {
                 color: #0065FC;
                 border-bottom: solid #0065FC 5px;
             }
             header nav
             {
-                position: static;
-                top: auto;
                 right: auto;
-                font-size: 3em;
+                font-size: 3em;                
+                flex-direction: column;
             }
             nav a
             {
                 border-bottom: solid #DEEBFF;
-                flex: 1;
                 padding: 3%;
                 padding-left: auto;
                 padding-right: auto;
@@ -178,9 +173,9 @@
     {
         background-color: #DEEBFF;
     }
-    .icon
+    .fa-search
     {
-        visibility: hidden;
+        display: none;
     }
 
         /*Recherche mobile */
@@ -188,40 +183,35 @@
         {
             .recherche
             {
-                position: relative;
-            }
-            .recherche div
-            {
+                display: flex;
+                justify-content: space-between;            
                 border: solid #DEEBFF;
+                border-radius: 20px;
                 margin: 3%;
-                height: 100px;
+                max-height: 100px;
                 width: auto;
+            }
+            .recherche div 
+            {
+                border: none;
             }
             .fa-map-marker-alt
             {
-                font-size: 40px;
-                padding: 40px;
+                font-size: 300%;
+                padding: 20%;
             }
             .recherche div button
             {
-                visibility: hidden;
-            }
-            .recherche button
-            {
-                color: #0065FC;
-                padding: 20px;
-                position: absolute;
-                top: 0px;
-                right: 3%;
-                overflow: hidden;
-                border-radius: 20px;
+                display: none;
             }
             .fa-search
             {
+                display: block;
                 color: white;
                 background-color: #0065FC;
-                font-size: 40px;
-                padding: 12px;
+                font-size: 300%;
+                padding: 3%;
+                border-radius: 20px;
             }
         }
 
@@ -230,12 +220,23 @@
     /* Filtre PC */
     .filtre
     {
+        position: relative;
         width: 70%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 3%;
         flex-wrap: wrap;
+    }
+    .filtrebox
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3%;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        width: 100%;
     }
     .checkbox input[type="checkbox"]
     {
@@ -245,6 +246,7 @@
     .filtre .nom
     {
         font-weight: 700;
+        position: absolute;
     }
     .filtre p
     {
@@ -255,17 +257,15 @@
     .checkbox
     {
         display: flex;
-        justify-content: left;
+        justify-content: space-between;
         align-items: center;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        padding-right: 10px;
+        padding-right: 1%;
         border: solid 1px #F2F2F2;
         border-left: transparent;
         border-radius: 100px;
         box-shadow: 2px 2px 2px #deebffb6;
     }
-    .checkbox:hover, .checkbox:checked /* faire rester le fond*/
+    .checkbox:hover
     {
         background-color: #DEEBFF;
     }
@@ -289,56 +289,50 @@
             .filtre
             {
                 position: relative;
-                align-items: flex-start;
-                padding-top: 7%;
-                max-width: 100%;
+                padding-top: 10%;
+                width: 100%;
             }
             .filtre p
             {
                 font-size: 3em;
                 font-weight: 600;
+                white-space:nowrap
             }
             .nom
             {
                 position: absolute;
-                top: 0%;
+                top: 5%;
                 font-weight: auto;
             }
-            .checkbox
+            .filtrebox
             {
-                visibility: hidden;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
             }
-            .checkbox label
-            {
+            .checkbox
+            {   
                 border: solid #DEEBFF 5px;
                 border-radius: 90px;
                 border-left: none;
-                min-width: 350px;
-                max-width: 700px;
-                align-items: center;
-                flex-wrap: nowrap;
-                padding-right: 70%;
+                padding-right: 5%;
+                margin: 1%;
             }
             .checkbox input[type="checkbox"]
             {
-                visibility:hidden;
+                display: none;
             }
             .delivery-icon
             {
                 background-color: #DEEBFF;
                 color: #0065FC;
-                padding: 12%;
-                font-size: 300%;
+                padding: 40px;
+                font-size: 50px;
                 border-radius: 100%;
             }
             .checkbox label:active, .checkbox p:active 
             {
                 background-color: #DEEBFF;
-            }
-
-            .checkbox p
-            {
-                padding: 8%;
             }
         }
 
@@ -387,13 +381,20 @@
         margin-right: 3%;
         align-items: flex-start;
     }
-
+    .star
+    {
+        color: #0065FC;
+    }
+    .nostar
+    {
+        color: #F2F2F2;
+    }
         /* Hébergement mobile */
         @media screen and (max-width: 1280px)
         {
             .hebergement
             {
-             visibility: hidden;   
+                flex-direction: column;
             }
         }
 
@@ -664,7 +665,6 @@
             {
                 padding-bottom: auto;
                 background-color: none;
-                width: auto;
                 border-radius: none;
                 margin-top: 3%;
             }
@@ -870,13 +870,10 @@
         width: 100%;    
         padding-bottom: 2%;;
     }
-    .footer a /* aide*/
+    .footer a
     {
         text-decoration: none;
         background-color: transparent;
-        width: 0;
-        height: 0;
-
     }
     .footer a:hover
     {
@@ -884,51 +881,51 @@
     }
     .footer h5 
     {
-            font-size: 1.1em;
-            text-align: left;
-            background-color: transparent;
-            padding: 3%;
-            padding-left: 5%;
+        font-size: 1.1em;
+        text-align: left;
+        background-color: transparent;
+        padding: 3%;
+        padding-left: 5%;
     }
 
         /* Footer mobile*/
         @media screen and (max-width: 1280px)
         {
-        .footer
-        {
-            padding: 3%;
+            .footer
+            {
+                padding: 3%;
+            }
+            .footer nav
+            {
+                flex-direction: column;
+                align-items: stretch;   
+            }
+            .footer ul
+            {
+                display: none;
+                flex-direction: row;
+                align-items: stretch;
+                line-height: 100px;
+                margin-bottom: 10%;
+                width: auto;
+            }
+            .footer li
+            {
+                font-size: 1.1em;
+                font-weight: 600;
+                line-height: 70px;
+                justify-content: stretch;
+                width: auto;
+                padding-bottom: auto;
+            }
+            .footer a
+            {
+                text-decoration: none;
+            }
+            .footer h5 
+            {
+                    font-size: 2.5em;
+                    text-align: left;
+                    padding: auto;
+            }
         }
-        .footer nav
-        {
-            flex-direction: column;
-            align-items: stretch;   
-        }
-        .footer ul
-        {
-            display: none;
-            flex-direction: row;
-            align-items: stretch;
-            line-height: 100px;
-            margin-bottom: 10%;
-            width: auto;
-        }
-        .footer li
-        {
-            font-size: 1.1em;
-            font-weight: 600;
-            line-height: 70px;
-            justify-content: stretch;
-            width: auto;
-            padding-bottom: auto;
-        }
-        .footer a
-        {
-            text-decoration: none;
-        }
-        .footer h5 
-        {
-                font-size: 2.5em;
-                text-align: left;
-                padding: auto;
-        }
-    }
