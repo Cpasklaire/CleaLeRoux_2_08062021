@@ -152,6 +152,7 @@
             {
                 font-size: 1.5em;
                 line-height: 170%;
+                padding-left: 1%;
             }
 
                 /* Slogan mobile */
@@ -181,6 +182,7 @@
     height: 50px;
     margin-top: 1%;
     margin-bottom: 1%;
+    margin-left: 1%;
 }
 .fa-map-marker-alt
 {
@@ -245,6 +247,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 1%;
 }
 .filtre h2
 {
@@ -257,6 +260,7 @@
     justify-content: space-between;
     align-items: center;
     width: 60%;
+    flex-wrap: wrap;
 }
 .checkbox
 {
@@ -283,6 +287,25 @@
     /* Filtre mobile */
     @media screen and (max-width: 768px)
     {
+        .filtre
+        {
+            position: relative;
+            padding-top: 50px;
+        }
+        .filtre h2
+        {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .delivery-icon
+        {
+            background-color: #DEEBFF
+        }
+        .checkbox:hover
+        {
+            background-color: #DEEBFF;
+        }
     }
 /* Information */
 .info
@@ -290,6 +313,7 @@
     font-size: 1em;
     margin-top: 1%;
     margin-bottom: 1%;
+    margin-left: 1%;
 }
 .fa-info
 {
@@ -325,6 +349,10 @@
     /* Hébergement mobile */
     @media screen and (max-width: 768px)
     {
+        .hebergement
+        {
+            flex-direction: column;
+        }
     }
 
         /* Hébergements populaires Pc*/
@@ -332,8 +360,8 @@
         {
             position: relative; 
             background-color: #F2F2F2;
-            padding-top: 3%;
-            padding-bottom: 1%;
+            padding-top: 60px;
+            padding-bottom: 1px;
             padding-left: 1%;
             padding-right: 1%;
             width: 30%;
@@ -398,6 +426,13 @@
             /* Hébergements populaires mobile */
             @media screen and (max-width: 768px)
             {
+                .populaire
+                {
+                width: 100%;
+                border-radius: 0;
+                padding-top: 100px;
+                padding-bottom: 50px;
+                }
             }
 
         /* Hébergements Marseille PC*/
@@ -412,9 +447,10 @@
             position: relative;
             padding: 3%;
             height: 500px;
+            max-height: 200%;
             border-radius: 20px;
-            padding-top: 5%;
-            padding-bottom: 4%;
+            padding-top: 90px;
+            padding-bottom: 70px;
         }
         .annonce_marseille_box h2
         {
@@ -463,6 +499,23 @@
             /* Marseille mobile */
             @media screen and (max-width: 768px)
             {
+                .annonce_marseille_box
+                {
+                    background-color: transparent;
+                    height: 150%;
+                    padding-top: 100px;
+                    padding-bottom: 100px;
+                }
+                .annonce_marseille
+                {
+                    width: 400px;
+                    margin-bottom: 20px;
+                }
+                .annonce_marseille img
+                {
+                    width: 400px;
+                }
+
             }
 
 /* Avtivité PC */
@@ -525,6 +578,18 @@
     /* Activité mobile */
     @media screen and (max-width: 768px)
     {
+        .activite_box
+        {
+            flex-direction: column;
+        }
+        .activite_box article
+        {
+            width: 400px;
+        }
+        .portrait img
+        {
+            height: 230px;
+        }
     }
     
 /* Footer */
@@ -562,4 +627,9 @@ footer a:hover
     /* Footer mobile*/
     @media screen and (max-width: 768px)
     {
+        footer nav
+        {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
