@@ -98,72 +98,18 @@
         color: #0065FC;
     }
 
-        /* Logo + navigation mobile */
-        @media screen and (max-width: 768px)
+        /* Slogan PC*/
+        h1
         {
-            .top img
-            {
-                width: 30%;
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-            .top
-            {
-                position: relative;                
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding-top: 100px;
-            }
-            .top nav .inscrit
-            {
-                position:absolute;
-                right: 3%;
-                top: 50px;
-                border: none;
-                padding: 0;
-            }
-            .nav_mobile
-            {
-                width: 100%;
-            }
-            header a
-            {
-                padding: 10%;
-                border-bottom: #F2F2F2 solid 2px;
-            }
-            header nav .nav_mobile:hover
-            {
-                border-bottom: 5px #0065FC solid;
-                border-top: 0;
-                color: #0065FC;
-            }
-
+            font-size: 1.5em;
+            margin-top: 1%;
+        }    
+        .slogan
+        {
+            font-size: 1.5em;
+            line-height: 170%;
+            padding-left: 1%;
         }
-
-            /* Slogan PC*/
-            h1
-            {
-                font-size: 1.5em;
-                margin-top: 1%;
-            }    
-            .slogan
-            {
-                font-size: 1.5em;
-                line-height: 170%;
-                padding-left: 1%;
-            }
-
-                /* Slogan mobile */
-                @media screen and (max-width: 768px)
-                {
-                    .slogan
-                    {
-                        padding: 5%;
-                        line-height: 200%;
-                    }
-                }
 
 /* Barre de recherche PC*/
 .bouton_mobile
@@ -207,36 +153,7 @@
     padding: 3%;
     font-weight: 600;
 }
-    /* Barre de recherche mobile */
-    @media screen and (max-width: 768px)
-    {
-        .bouton_pc
-        {
-            display: none;
-        }
-        .recherche
-        {
-            border-right: none;
-            padding-right: 4%;
-        }
-        .bouton_mobile
-        {
-            display: initial;
-            border: none;
-        }
-        .fa-search
-        {
-            color: white;
-            background-color: #0065FC;
-            padding: 90%;
-            border-radius: 10px;
-            font-size: 1.3em;
-        }
-        .fa-map-marker-alt
-        {
-            padding: 6%;
-        }
-    }
+
 /* Filtres PC */
 .checkbox input
 {
@@ -284,29 +201,6 @@
     padding: 20px;
 }
 
-    /* Filtre mobile */
-    @media screen and (max-width: 768px)
-    {
-        .filtre
-        {
-            position: relative;
-            padding-top: 50px;
-        }
-        .filtre h2
-        {
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        .delivery-icon
-        {
-            background-color: #DEEBFF
-        }
-        .checkbox:hover
-        {
-            background-color: #DEEBFF;
-        }
-    }
 /* Information */
 .info
 {
@@ -321,11 +215,6 @@
     padding: 1%;
     border-radius: 100%;
 }
-
-    /* Information mobile */
-    @media screen and (max-width: 768px)
-    {
-    }
 
 /* Tous les hébergements PC*/
 .hebergement
@@ -345,15 +234,6 @@
 {
     color: #F2F2F2;
 }
-
-    /* Hébergement mobile */
-    @media screen and (max-width: 768px)
-    {
-        .hebergement
-        {
-            flex-direction: column;
-        }
-    }
 
         /* Hébergements populaires Pc*/
         .populaire
@@ -423,18 +303,6 @@
             padding-top: 40%;
         }
 
-            /* Hébergements populaires mobile */
-            @media screen and (max-width: 768px)
-            {
-                .populaire
-                {
-                width: 100%;
-                border-radius: 0;
-                padding-top: 100px;
-                padding-bottom: 50px;
-                }
-            }
-
         /* Hébergements Marseille PC*/
         .annonce_marseille_box
         {
@@ -496,28 +364,6 @@
             left: 3%;
         }
 
-            /* Marseille mobile */
-            @media screen and (max-width: 768px)
-            {
-                .annonce_marseille_box
-                {
-                    background-color: transparent;
-                    height: 150%;
-                    padding-top: 100px;
-                    padding-bottom: 100px;
-                }
-                .annonce_marseille
-                {
-                    width: 400px;
-                    margin-bottom: 20px;
-                }
-                .annonce_marseille img
-                {
-                    width: 400px;
-                }
-
-            }
-
 /* Avtivité PC */
 .activite
 {
@@ -574,23 +420,6 @@
     padding-bottom: 5%;
     padding-top: 5%;
 }
-
-    /* Activité mobile */
-    @media screen and (max-width: 768px)
-    {
-        .activite_box
-        {
-            flex-direction: column;
-        }
-        .activite_box article
-        {
-            width: 400px;
-        }
-        .portrait img
-        {
-            height: 230px;
-        }
-    }
     
 /* Footer */
 footer
@@ -624,12 +453,158 @@ footer a:hover
 {
     font-weight: 500;
 }
-    /* Footer mobile*/
+
+
+    /* Mobile */        
     @media screen and (max-width: 768px)
     {
-        footer nav
-        {
-            flex-direction: column;
-            align-items: flex-start;
-        }
+        /* Header */
+
+        /* Logo + navigation mobile */
+            .top img
+            {
+                width: 30%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .top
+            {
+                position: relative;                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 100px;
+            }
+            .top nav .inscrit
+            {
+                position:absolute;
+                right: 3%;
+                top: 50px;
+                border: none;
+                padding: 0;
+            }
+            .nav_mobile
+            {
+                width: 100%;
+            }
+            header a
+            {
+                padding: 10%;
+                border-bottom: #F2F2F2 solid 2px;
+            }
+            header nav .nav_mobile:hover
+            {
+                border-bottom: 5px #0065FC solid;
+                border-top: 0;
+                color: #0065FC;
+            }
+                            
+        /* Slogan mobile */
+            .slogan
+            {
+                padding: 5%;
+                line-height: 200%;
+            }
+
+        /* Barre de recherche mobile */
+            .bouton_pc
+            {
+                display: none;
+            }
+            .recherche
+            {
+                border-right: none;
+                padding-right: 4%;
+            }
+            .bouton_mobile
+            {
+                display: initial;
+                border: none;
+            }
+            .fa-search
+            {
+                color: white;
+                background-color: #0065FC;
+                padding: 90%;
+                border-radius: 10px;
+                font-size: 1.3em;
+            }
+            .fa-map-marker-alt
+            {
+                padding: 6%;
+            }
+        
+        /* Filtre mobile */
+            .filtre
+            {
+                position: relative;
+                padding-top: 50px;
+            }
+            .filtre h2
+            {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .delivery-icon
+            {
+                background-color: #DEEBFF
+            }
+            .checkbox:hover
+            {
+                background-color: #DEEBFF;
+            }
+
+        /* Hébergement mobile */
+            .hebergement
+            {
+                flex-direction: column;
+            }
+
+        /* Hébergements populaires mobile */
+            .populaire
+            {
+                width: 100%;
+                border-radius: 0;
+                padding-top: 100px;
+                padding-bottom: 50px;
+            }
+
+        /* Marseille mobile */
+            .annonce_marseille_box
+            {
+                background-color: transparent;
+                height: 150%;
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
+            .annonce_marseille
+            {
+                width: 400px;
+                margin-bottom: 20px;
+            }
+            .annonce_marseille img
+            {
+                width: 400px;
+            }
+        /* Activité mobile */
+            .activite_box
+            {
+                flex-direction: column;
+            }
+            .activite_box article
+            {
+                width: 400px;
+            }
+            .portrait img
+            {
+                height: 230px;
+            }
+        /* Footer mobile*/
+            footer nav
+            {
+                flex-direction: column;
+                align-items: flex-start;
+            }
     }
