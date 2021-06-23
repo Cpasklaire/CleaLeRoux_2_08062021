@@ -244,11 +244,13 @@
             padding-bottom: 1px;
             padding-left: 1%;
             padding-right: 1%;
-            width: 30%;
+            min-width: 30%;
+            max-width: 100%;
             flex-direction: column;
             display: flex;
             align-items: center;
-            height: 600px;
+            min-height: 600px;
+            max-height: 100%;
             justify-content: space-between;
             border-radius: 20px;
         }
@@ -311,14 +313,16 @@
             flex-wrap: wrap;
             align-content: space-between;
             width: 60%;
+            max-width: 100%;
             background-color: #F2F2F2;
             position: relative;
             padding: 3%;
-            height: 500px;
+            min-height: 500px;
             max-height: 200%;
             border-radius: 20px;
             padding-top: 90px;
             padding-bottom: 70px;
+            max-height: 500%;
         }
         .annonce_marseille_box h2
         {
@@ -373,6 +377,8 @@
 {
     display: flex;
     justify-content: space-between;   
+    flex-wrap: wrap;
+    width: 100%;
 }
 .activite_box article
 {
@@ -396,6 +402,7 @@
 .paysage article
 {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .paysage
 {
