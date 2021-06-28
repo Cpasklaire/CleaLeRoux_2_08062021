@@ -447,6 +447,14 @@ padding-left: 0;
     padding-bottom: 5%;
     padding-top: 5%;
 }
+.wrap
+{
+    display: flex;
+    width: 48%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
     
 /* Footer */
 footer
@@ -608,7 +616,7 @@ footer a:hover
         /* Hébergements populaires mobile */
             .populaire
             {
-                width: 95%;
+                width: 100%;
                 border-radius: 0;
                 margin: 0;
             }
@@ -616,6 +624,7 @@ footer a:hover
             {
                 padding-bottom: 3%;
                 padding-top: 3%;
+                width: 90%;
             }
             .annonce_populaire
             {
@@ -644,12 +653,13 @@ footer a:hover
             .activite_box
             {
                 flex-direction: column;
-                align-items: center;
+                margin-left: 5%;
+                width: 90%;
             }
             .activite_box article
             {
                 width: 300px;
-                margin: 1%;
+                margin-bottom: 5%;
             }
             .portrait img
             {
@@ -661,4 +671,47 @@ footer a:hover
                 flex-direction: column;
                 align-items: flex-start;
             }
+    }
+
+    /* intermédiaire*/
+
+    @media screen and (max-width: 1400px) and (min-width: 767px)
+    {
+        /* Hébergement */
+        .hebergement
+        {
+            flex-direction: column;
+        }
+        /* Hébergements populaires */
+        .populaire
+        {
+            width: 95%;
+            border-radius: 20px;
+            margin: 0;
+
+        }
+        .populaire-titre
+        {
+            padding-bottom: 3%;
+            padding-top: 3%;
+        }
+        .annonce_populaire
+        {
+            width: 300px;
+        }
+
+        /* Marseille mobile */
+        .annonce_marseille_box
+        {
+            background-color: transparent;
+            width: 95%;
+        }
+        .annonce_marseille
+        {
+            width: 300px;
+        }
+        .annonce_marseille img
+        {
+            width: 300px;
+        }
     }
