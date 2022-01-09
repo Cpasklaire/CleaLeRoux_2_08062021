@@ -1,19 +1,11 @@
-Bienvenue sur Grouposocial le réseau social de Groupomania
+Scénario
+Enfin, vous avez trouvé votre premier stage en tant que développeur web chez Reservia, une
+petite entreprise proposant un outil de planification de vacances. Leur site permet aux usagers
+de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements
+peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
+Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc,
+designer UI.
 
-Vous avez besoin pour lire cette appli de Vue.js, Node.js et Mysql
-
-## Installer le projet
-Clonnez le github
-Dans la racide du projet lancer
-```
-npm install
-```
-Créé la database dans le clientMySQL avec le fichier database.sql
-Modifier le .env
-
-### Lancer l'appli
-Dans la racine du fichier lancer
-```
-npm run frontstart
-npm run backstart
-```
+*Technologie
+HTML
+Css
