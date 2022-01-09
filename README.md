@@ -1,3 +1,5 @@
+Transformez une maquette en site web
+
 Scénario
 Enfin, vous avez trouvé votre premier stage en tant que développeur web chez Reservia, une
 petite entreprise proposant un outil de planification de vacances. Leur site permet aux usagers
@@ -6,6 +8,6 @@ peuvent également être filtrés par thématique, par exemple leur budget ou le
 Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc,
 designer UI.
 
-*Technologie
+Technologie
 HTML
 Css
